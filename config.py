@@ -1,0 +1,1 @@
+STANDINGS_URL = 'https://www.basketball-reference.com/leagues/NBA_2024_standings.html'
