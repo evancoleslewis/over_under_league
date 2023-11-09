@@ -20,9 +20,9 @@ def get_conference_standings(html, conference_id):
     stats_set = results.find_all('td', class_='right')
 
     teams_raw = [th.get_text(strip=True) for th in teams_set if th.get("data-stat") == "team_name"]
-    # change 'team(n)' to 'team' and drop 1st value of 'Conference'
+    teams_raw.pop(0)
+    # change 'team(n)' to 'team'
     teams = [re.sub(r'\(\d+\)', '', team).strip() for team in teams_raw]
-    teams.pop(0)
     wins = [td.get_text(strip=True) for td in stats_set if td.get("data-stat") == "wins"]
     losses = [td.get_text(strip=True) for td in stats_set if td.get("data-stat") == "losses"]
 
