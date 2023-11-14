@@ -4,13 +4,13 @@ import logging
 
 logging.basicConfig(filemode='w', filename='log/extract.log', level=logging.INFO)
 
-def get_standings_html():
+def get_standings_html(url):
     """
     Requests hmtl from standings_url. Returns html.
     """
 
     with requests.Session() as session:
-        response = session.get(config.STANDINGS_URL)
+        response = session.get(url)
         text = response.text
         code = response.status_code
 
