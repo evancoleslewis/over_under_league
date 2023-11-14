@@ -5,7 +5,6 @@ import re
 
 
 import logging
-logging.basicConfig(filename='log/transform.log', filemode='w', level=logging.INFO)
 
 
 
