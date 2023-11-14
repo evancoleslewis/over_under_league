@@ -4,7 +4,7 @@ import logging
 
 def get_standings_html(url):
     """
-    Requests hmtl from standings_url. Returns html.
+    Requests hmtl from url. Returns html.
     """
 
     with requests.Session() as session:

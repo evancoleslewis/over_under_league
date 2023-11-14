@@ -1,18 +1,21 @@
+import config
 import etl.extract as extract
 import etl.transform as transform
 
 
-def main():
+def run():
     """
     Extracts html and parses for standings.
     """
 
-    html = extract.get_standings_html()
-    current_standings_df = transform.get_standings(html)
-    print(current_standings_df)
+    for run_type in config.RUN_TYPES:
+        url = config.RUN_DICT[run_type]['url']
+        html = extract.get_standings_html(url)
+        standings_df = transform.get_standings(html, run_type)
+        print(run_type, standings_df)
 
     return
 
 if __name__ == '__main__':
-    main()
+    run()
 
