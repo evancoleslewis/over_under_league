@@ -2,8 +2,6 @@ import requests
 import config
 import logging
 
-logging.basicConfig(filemode='w', filename='log/extract.log', level=logging.INFO)
-
 def get_standings_html(url):
     """
     Requests hmtl from standings_url. Returns html.
