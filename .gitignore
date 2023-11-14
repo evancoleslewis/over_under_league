@@ -1,3 +1,6 @@
 testing/
 __pycache__/
 *.log
+
+# for google api
+nba-projects-405102-4a53f1ee13a8.json
