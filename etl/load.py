@@ -18,4 +18,3 @@ def load_to_gsheet(df, sheet_name):
     logging.info('Uploaded data to worksheet: {sheet_name}}')
 
     return
-
