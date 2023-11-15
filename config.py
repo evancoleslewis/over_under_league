@@ -1,5 +1,6 @@
 GSHEET_URL = 'https://docs.google.com/spreadsheets/d/1NwFT0gpED4oxM6OUuSnRidAOHwZHYjaIdB86i2HCkbU/edit#gid=938572743'
 
+
 RUN_DICT = {
     'current' : {
         'western'  : "div_confs_standings_W"
