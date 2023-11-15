@@ -16,6 +16,6 @@ def get_standings_html(url):
         logging.ERROR(f"Response status code: {code}\nResponse text:\n{text}")
         exit()
 
-    logging.info(f"Successful Response:\n\n{text}")
+    logging.info(f"Successful HTML Extraction")
 
     return text

@@ -1,11 +1,4 @@
-# CURRENT_URL = 'https://www.basketball-reference.com/leagues/NBA_2024_standings.html'
-# PROJECTION_URL = 'https://www.basketball-reference.com/friv/playoff_prob.html'
-
-# WESTERN_CONFERENCE_ID = "div_confs_standings_W"
-# EASTERN_CONFERENCE_ID = "div_confs_standings_E"
-
-# WESTERN_PROJECTIONS_ID = "all_projected_standings_w"
-# EASTERN_PROJECTIONS_ID = "all_projected_standings_e"
+GSHEET_URL = 'https://docs.google.com/spreadsheets/d/1NwFT0gpED4oxM6OUuSnRidAOHwZHYjaIdB86i2HCkbU/edit#gid=938572743'
 
 RUN_DICT = {
     'current' : {
