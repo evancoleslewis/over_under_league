@@ -34,5 +34,6 @@ def get_standings(html, current_or_projection):
     east_standings_df = get_conference_standings(html, current_or_projection, east_id)
 
     all_standings_df = helper.combine_conference_df(east_standings_df, west_standings_df)
+    logging.info('Successfully Formatted HTML into dataframe')
 
     return all_standings_df
